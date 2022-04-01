@@ -1,0 +1,379 @@
+@import 'base.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Phan navbar*/
+.header {
+    position:fixed;
+    height: 80px;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 100;
+   background-color: #fff;
+}
+
+.header__navbar {
+    display: flex;
+    align-items:center; 
+    margin-right: 24px;
+    margin-left: 24px; 
+}
+.header__navbar-logo{
+    flex: 1;
+}
+.header__navbar-logo img {
+  
+    width: 120px;
+    height: 50px;
+    margin-top: 10%;
+    margin-right: 20%;
+    
+}
+.header__navbar-menu{
+    flex: 3;
+}
+
+.haeder__navbar-menu-item {
+   
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-right: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+.haeder__navbar-menu-item a{
+    text-decoration: none;
+    color:  #6c757b;
+   
+}
+
+.header__navbar-search {
+   
+    flex: 2;
+    font-weight: 500;
+    background-color: #f6f6f6;
+    border-radius: 1.6rem;
+    height: 4.0rem;
+}
+
+.search-btn {
+    background-color: #f6f6f6;
+    border-radius: 1.6rem;
+    margin-left: 10px;
+    color: #636c73;
+    border: none;
+}
+
+.search-input {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+    background-color: #f6f6f6;
+    outline: none;
+    border: none;
+    color: #4a5051;
+}
+.header__navbar-icon{
+    float: right;
+    flex: 1.5;
+   
+}
+
+.header-icon {
+   
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-left: 16%;
+    
+}
+
+.header-icon-link {
+    color: rgba(0, 0, 0, 0.801);
+}
+.haeder__navbar-menu-item a:hover, a.active{
+    color: #000;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #000;
+    float: left;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:1171px){
+    .header__navbar-logo{
+        flex: 0.5;
+    }
+    .header__navbar-logo img{
+        width: 120px;
+        height: 50px;
+        margin-top: 7%;
+        margin-right: 20%;
+        
+    }
+    .header__navbar-menu{
+        flex: 2;
+    }
+    .haeder__navbar-menu-item {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color:  #6c757b;
+        cursor: pointer;
+    }
+    .header__navbar-search{
+        display: none;
+    }
+    .header__navbar-icon{
+        flex: 1;
+       
+    }
+    
+}
+
+@media (max-width:890px){
+    .checkbtn{
+        display: block; 
+    }
+    .header__navbar-logo{
+        flex: 1;
+    }
+    .header__navbar-menu{
+        position: fixed;
+        width: 100%;
+        height: 700px;
+        z-index: 1000;
+        background: #fff;
+        top: 80px;
+        right: 100%;
+        text-align:left;
+        transition: all 0.5s;
+    }
+    .haeder__navbar-menu-item{
+        display: block;
+        margin: 20px 0px 30px 40px;
+    }
+    .a:hover, a.active{
+        color: #000;
+        transition: .5s;
+    }
+    #check:checked ~ .header__navbar-menu{
+        right: 0px;
+    }
+    .header__navbar-icon{
+        flex: 1;
+       
+    }
+
+}
+/* quang cao home-page */
+
+
+.slider{
+    margin: 80px 24px 0px 24px;
+    overflow: hidden;
+}
+.slides{
+    width: 300%;
+    display: flex;
+}
+
+.slides input{
+    display:none;
+}
+
+.slide{
+   transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+   
+}
+
+.navigation-manual{
+    position:absolute;
+    width: 97%;
+    margin-top: 29%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    margin-right: 24px;
+    z-index: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .slide{
+    transform: translate(0%, 0%);
+}
+
+#radio2:checked ~ .slide{
+    transform: translate(-100%, 0%);
+}
+#radio3:checked ~ .slide{
+    transform: translate(-200%, 0%);
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 97%;
+    margin-top: 29%;
+    display: flex;
+    justify-content: center;
+
+}
+.navigation-auto div{
+    border: 2px solid #fff;
+    padding: 5px;
+    margin-right: 24px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #fff;
+}
+
+/* Banner sản phẩm giá tốt*/
+.title1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 20px 0px 10px 24px;
+}
+.best-product{
+  
+    margin: 0px 24px ;
+}
+.best-product img{
+    width: 100%;
+    height: 100%;
+}
+
+/* sản phẩm mới*/
+
+.block-product-tab{
+    margin: 0px 24px;
+}
+.title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 36px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+}
+
+.product-items{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+.product-card{
+    flex-basis: 25%;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.product-item-info{
+    display: block;
+}
+.product-item-photo{
+    display: block;
+    width: 100%;
+}
+.product-card img{
+    max-width: 100%;
+    height: auto;
+}
+.product-item-details{
+    padding: 10px 0px;
+}
+.product-item-details a{
+    text-decoration: none;
+    padding: 2px 0px;
+}
+.kind-product{
+    font-size: 11px;
+    font-weight: 300;
+}
+.product-item-name{
+    color: #333f48;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.price{
+    color: #333f48;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/*footer*/
+.container{
+    background-color: #333f48;
+    color: #fff;
+    padding: 10px 40px 40px 40px;
+}
+.container ul{
+    list-style: none;
+}
+.container h4{
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 19px;
+}
+.container li{
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+}
+.container a{
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+}
+.social-licks li{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
