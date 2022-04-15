@@ -67,7 +67,7 @@
                         <div class="checkout-title">
                         <h2>Sản phẩm</h2>
                         </div>
-                        <table class="checkout-cart-items">
+                        <table class="checkout-cart-items" id="table-checkout">
                             <thead>
                                 <tr>
                                     <th class="col item">
@@ -84,43 +84,13 @@
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr class="cart-item" >
-                                    <td data-th="Sản phẩm" class="col item">
-                                        <div class="cart-item-info">
-                                            <div class="cart-item-photo">
-                                                <a href="/html/chitiensanpham.html"><img src="/images/new-product/new-product-1.jpg" alt=""></a>
-                                            </div>
-                                            <div class="cart-item-details">
-                                                <div class="cart-item-name">
-                                                    <a href="/html/chitiensanpham.html">Áo phông nữ</a>
-                                                </div>
-                                                <div class="cart-item-potions">
-                                                    <span class="swatch-option text">Kích cỡ: S</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-th="Giá tiền" class="col price">
-                                        <span class="price">169.000 ₫</span>
-                                    </td>
-                                    <td data-th="Số lượng" class="col qty">
-                                        <div class="cart-item-qty">
-                                            <a href="" class="btn-number btn-number-minus">
-                                                <span>+</span>
-                                            </a>
-                                            <input type="text" readonly="readonly" class="input-cart-item-qty" value="1">
-                                            <a href="" class="btn-number btn-number-plus">
-                                                <span>-</span>
-                                            </a>
-                                        </div>
-                                    </td>
-                                    <td data-th="Tổng tiền" class="col subtotal">
-                                        <span class="price">169.000 ₫</span>
-                                    </td>
-                                </tr>
+                            <tbody id="tbody" >
+
+                                <!-- <script src="/js/clickQty.js"></script> -->
+                                
                             </tbody>    
-                        </table>         
+                        </table>  
+                        <!-- <script src="/js/totalCart.js"></script>        -->
                     </div>
                 </div>
 
@@ -129,19 +99,19 @@
                         <div class="checkout-summary-title">Đơn hàng</div>
                         <div class="checkout-totals">
                             <table>
-                                <tbody>
-                                    <tr>
+                                <tbody id="checkout-summary">
+                                    <!-- <tr>
                                         <th>Giá gốc</th>
-                                        <td>169.000 ₫</td>
+                                        <td id="totals-ori">169.000</td>
                                     </tr>
                                     <tr>
                                         <th>Phí vận chuyển</th>
-                                        <td>0 ₫</td>
+                                        <td id="price-ship">0 ₫</td>
                                     </tr>
                                     <tr class="grand-totals">
                                         <th>Tổng tiền thanh toán</th>
-                                        <td>169.000 ₫</td>
-                                    </tr>
+                                        <td id="totals" >169.000</td>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -332,5 +302,13 @@
             </div>
         </main>
     </div>
+    <!-- <script src="/js/sanPham.js"></script> -->
+    <script src="/js/thuvien.js"></script>
+    <script>
+         showCartCheckout();
+    </script>
+    <script>
+        Order();
+    </script>
 </body>
 </html>

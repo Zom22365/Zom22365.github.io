@@ -217,8 +217,8 @@
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="cart-item" >
+                                <tbody id="tbody">
+                                    <!-- <tr class="cart-item" >
                                         <td data-th="Sản phẩm" class="col item">
                                             <div class="cart-item-info">
                                                 <div class="cart-item-photo">
@@ -243,7 +243,7 @@
                                         <td data-th="Tổng tiền" class="col subtotal">
                                             <span class="price">169.000 ₫</span>
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>    
                             </table>         
                         </div>
@@ -259,7 +259,7 @@
                         <div class="checkout-summary-title">Đơn hàng</div>
                         <div class="checkout-totals">
                             <table>
-                                <tbody>
+                                <tbody id="checkout-summary">
                                     <tr>
                                         <th>Giá gốc</th>
                                         <td>169.000 ₫</td>
@@ -287,5 +287,12 @@
             
         </main>
     </div>
+    <script src="/js/thuvien.js"></script>
+    <script>
+         showDetailCheckout();
+    </script>
+    <script>
+        Order();
+    </script>
 </body>
 </html>

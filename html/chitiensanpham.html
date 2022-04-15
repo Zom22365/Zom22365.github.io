@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="/font/fontawesome-free-6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+   
 </head>
 <body>
     <div class="app">
@@ -64,17 +65,129 @@
                             </a>
                         </li>
                         <li class ="header-icon">
-                            <a href="" class = "header-icon-link" Đăng nhập>
+                            <a  class = "header-icon-link" onclick="showForm()" Đăng nhập>
                                 <i class="fa-solid fa-user fa-lg"></i>
                             </a>
                         </li>
                         <li class ="header-icon">
-                            <a href="" class = "header-icon-link" Giỏ hàng>
+                            <a  class = "header-icon-link" onclick="showCarts()" Giỏ hàng>
                                 <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                                <span id="countsp">0</span>
                             </a>
                         </li>
                 </div>
             </nav>
+            <div class="show-cart" id="showCart">
+                <div class="table-product">
+
+                    <table class="checkout-cart-items" id="table-checkout">
+                        <thead>
+                            <tr>
+                                <th class="col item">
+                                    <span>Sản phẩm</span>
+                                </th>
+                                <th class="col price">
+                                    <span>Giá tiền</span>
+                                </th>
+                                <th class="col qty">
+                                    <span>Số lượng</span>
+                                </th>
+                                <th class="col subtotal">
+                                    <span>Tổng tiền</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody" >
+                            <!-- <script src="/js/clickQty.js"></script> -->
+                        </tbody> 
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    <a href="/html/thanh_toan/gioHang.html">
+                                        <button class="viewCart">
+                                            Xem giỏ hàng
+                                        </button>
+                                    </a>
+                                </td>
+                                    
+                            </tr>
+                        </tfoot>
+                          
+                    </table>  
+                </div>
+            </div>
+            <div class="cart-empty" id="cartEmpty">
+                <!-- <button  class="btn-cart-close">
+                    X
+                </button> -->
+                <div class="cart-empty-photo">
+                    <img src="/images/cart/cart-empty.png" alt="">
+                    <p>Chưa có sản phẩm <br> trong giỏ hàng của bạn.</p>
+                </div>
+            </div>
+            
+            <div id="form-login">
+                <div class="form-container">
+                    <div class="form-header-login">
+                        <h2>Đăng nhập</h2>
+                    </div>
+                    <div class="form-info-login">
+                        <b>Cảm ơn bạn đã trở lại.</b>
+                        <div class="form-group">
+                            <label class="label"> Số điện thoại</label>
+                            <input type="text" class = "form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Mật khẩu</label>
+                            <input type="text" class = "form-control" >
+                        </div>
+                    </div>
+                    <div class="button-login">
+                        <button class="btn-login">Tiếp tục</button>
+                    </div>
+                    <div class="form-footer">
+                        <p>Bạn chưa có tài khoản? <a onclick="formRegister()">Đăng ký</a> tại đây.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="form-register">
+                <div class="form-container">
+                    <div class="form-header-login">
+                        <h2>Đăng ký</h2>
+                    </div>
+                    <div class="form-info-login">
+                        <b>Đăng ký để được phục vụ tốt hơn.</b>
+                        <div class="form-group">
+                            <label class="label"> Số điện thoại</label>
+                            <input type="text" class = "form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Họ tên</label>
+                            <input type="text" class = "form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Địa chỉ</label>
+                            <input type="text" class = "form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Mật khẩu</label>
+                            <input type="text" class = "form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Xác nhận lại mật khẩu</label>
+                            <input type="text" class = "form-control" >
+                        </div>
+                    </div>
+                    <div class="button-login">
+                        <button class="btn-login">Tiếp tục</button>
+                    </div>
+                    <div class="form-footer">
+                        <p>Bạn đã có tài khoản? <a onclick="formLogin()">Đăng nhập</a> tại đây.</p>
+                    </div>
+                </div>
+            </div>
+            <script src="/js/form.js"></script>
         </header>
         <main class="main">
             <div class="kind-tab">
@@ -107,7 +220,7 @@
                         <img src="/images/detail/Ao phong-2.jpg"  class="small-img" alt="">
                     </div>
                     <div class="product-detail-photo-col">
-                        <img src="/images/detail/6ts22s005-sw001-3-thumb.jpg" class="small-img" alt="">
+                        <img src="/images/detail/6ts22s005-sw001-4-thumb.jpg" class="small-img" alt="">
                     </div>
                     <div class="product-detail-photo-col">
                         <img src="/images/detail/6ts22s005-sw001-4.jpg" class="small-img" alt="">
@@ -126,33 +239,32 @@
                         smallImg[2].onclick = function(){
                             productImg.src = smallImg[2].src;
                         }
-                        smallImg[3].onclick = function(){
-                            productImg.src = smallImg[3].src;
-                        }
                         smallImg[4].onclick = function(){
                             productImg.src = smallImg[4].src;
                         }
                 </script>
                 <div class="product-detail">
-                    <h1>Áo phông nữ</h1>
-                    <h2>169.000 ₫</h2>
-                    <select name="" id="">
+                    <img src="/images/detail/Ao-phong-1.jpg" class="small-img"
+                    alt="" style="display: none">
+                    <h1 id="name-product">Áo phông nữ</h1>
+                    <h2 id="price-product">169000</h2>
+                    <select name="" id="size">
                         <option value="">Kích cỡ</option>
-                        <option value="">XL</option>
-                        <option value="">L</option>
-                        <option value="">M</option>
-                        <option value="">S</option>
+                        <option value="XL">XL</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="S">S</option>
                     </select>
-                    <input type="number" value="1">
-                    <button>
-                        <a href="" class="btn-add">Thêm vào giỏ hàng</a>
+                    <input type="number" id="input-qty" value="1">
+                    <button type="button" id="add-cart" class="btn-add" onclick="themvaogiohang(this)">
+                        Thêm vào giỏ hàng
                     </button>
                     <button class="btn-buynow">
                         <a href="" class="buynow" >Mua ngay</a>
                     </button>
-                    <h3>Mô tả</h3>
+                    <h4>Mô tả</h4>
                     <p>Áo phông nữ in hình thân trước, phom dáng thoải mái, chất liệu 100% cotton</p>
-                    <h3>Chất liệu</h3>
+                    <h4>Chất liệu</h4>
                     <p>100% cotton</p>
                 </div>
             </div>
@@ -175,9 +287,9 @@
                                     </div>
                                     <div class="product-item-details">
                                         <a href="" class="kind-product" >Áo phông</a>
-                                        <h3 class="product-item-name">
+                                        <h4 class="product-item-name">
                                             <a href="">Áo phông nữ</a>
-                                        </h3>
+                                        </h4>
                                         <div class="price-box">
                                             <span class="price">169.000 ₫</span>
                                         </div>
@@ -192,9 +304,9 @@
                                     </div>
                                     <div class="product-item-details">
                                         <a href="" class="kind-product" >Áo phông</a>
-                                        <h3 class="product-item-name">
+                                        <h4 class="product-item-name">
                                             <a href="">Áo phông nữ</a>
-                                        </h3>
+                                        </h4>
                                         <div class="price-box">
                                             <span class="price">169.000 ₫</span>
                                         </div>
@@ -209,9 +321,9 @@
                                     </div>
                                     <div class="product-item-details">
                                         <a href="" class="kind-product" >Áo phông</a>
-                                        <h3 class="product-item-name">
+                                        <h4 class="product-item-name">
                                             <a href="">Áo phông nữ</a>
-                                        </h3>
+                                        </h4>
                                         <div class="price-box">
                                             <span class="price">169.000 ₫</span>
                                         </div>
@@ -226,9 +338,9 @@
                                     </div>
                                     <div class="product-item-details">
                                         <a href="" class="kind-product" >Áo phông</a>
-                                        <h3 class="product-item-name">
+                                        <h4 class="product-item-name">
                                             <a href="">Áo phông nữ</a>
-                                        </h3>
+                                        </h4>
                                         <div class="price-box">
                                             <span class="price">169.000 ₫</span>
                                         </div>
@@ -243,9 +355,9 @@
                                     </div>
                                     <div class="product-item-details">
                                         <a href="" class="kind-product" >Áo phông</a>
-                                        <h3 class="product-item-name">
+                                        <h4 class="product-item-name">
                                             <a href="">Áo phông nữ</a>
-                                        </h3>
+                                        </h4>
                                         <div class="price-box">
                                             <span class="price">169.000 ₫</span>
                                         </div>
@@ -260,9 +372,9 @@
                                     </div>
                                     <div class="product-item-details">
                                         <a href="" class="kind-product" >Áo phông</a>
-                                        <h3 class="product-item-name">
+                                        <h4 class="product-item-name">
                                             <a href="">Áo phông nữ</a>
-                                        </h3>
+                                        </h4>
                                         <div class="price-box">
                                             <span class="price">169.000 ₫</span>
                                         </div>
@@ -277,9 +389,9 @@
                                     </div>
                                     <div class="product-item-details">
                                         <a href="" class="kind-product" >Áo phông</a>
-                                        <h3 class="product-item-name">
+                                        <h4 class="product-item-name">
                                             <a href="">Áo phông nữ</a>
-                                        </h3>
+                                        </h4>
                                         <div class="price-box">
                                             <span class="price">169.000 ₫</span>
                                         </div>
@@ -294,9 +406,9 @@
                                     </div>
                                     <div class="product-item-details">
                                         <a href="" class="kind-product" >Áo phông</a>
-                                        <h3 class="product-item-name">
+                                        <h4 class="product-item-name">
                                             <a href="">Áo phông nữ</a>
-                                        </h3>
+                                        </h4>
                                         <div class="price-box">
                                             <span class="price">169.000 ₫</span>
                                         </div>
@@ -311,9 +423,9 @@
                                     </div>
                                     <div class="product-item-details">
                                         <a href="" class="kind-product" >Áo phông</a>
-                                        <h3 class="product-item-name">
+                                        <h4 class="product-item-name">
                                             <a href="">Áo phông nữ</a>
-                                        </h3>
+                                        </h4>
                                         <div class="price-box">
                                             <span class="price">169.000 ₫</span>
                                         </div>
@@ -367,5 +479,7 @@
             </div>
             </footer>
     </div>
+    <script src="/js/thuvien.js"></script>
+    <!-- <script src="/js/sanPham.js"></script> -->
 </body>
 </html>

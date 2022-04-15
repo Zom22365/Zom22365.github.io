@@ -69,12 +69,56 @@
                             </a>
                         </li>
                         <li class ="header-icon">
-                            <a href="" class = "header-icon-link" Giỏ hàng>
+                            <a  class = "header-icon-link" onclick="showCart()" Giỏ hàng>
                                 <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                                <span id="countsp">0</span>
                             </a>
                         </li>
+                       
                 </div>
+
+                
             </nav>
+            <div class="show-cart" id="showCart">
+                <div class="table-product">
+
+                    <table class="checkout-cart-items" id="table-checkout">
+                        <thead>
+                            <tr>
+                                <th class="col item">
+                                    <span>Sản phẩm</span>
+                                </th>
+                                <th class="col price">
+                                    <span>Giá tiền</span>
+                                </th>
+                                <th class="col qty">
+                                    <span>Số lượng</span>
+                                </th>
+                                <th class="col subtotal">
+                                    <span>Tổng tiền</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody" >
+                            <!-- <script src="/js/clickQty.js"></script> -->
+                        </tbody> 
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    <a href="/html/thanh_toan/gioHang.html">
+                                        <button class="viewCart">
+                                            Xem giỏ hàng
+                                        </button>
+                                    </a>
+                                </td>
+                                    
+                            </tr>
+                        </tfoot>
+                          
+                    </table>  
+                </div>
+                
+            </div>
         </header>
         <main class="main">
             <div class="kind-tab">
@@ -100,55 +144,55 @@
                         <div class="category-items-slide">
                             <i class="fa-solid fa-angle-left" id="prev"></i>
                            <div class="slick-list">
-                               <div class="category-item-photo">
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
                                    <a href="/html/nu/aophong.html">
                                        <img src="/images/categogy/category-aophong-photo.png" alt="">
                                    </a>
                                    <a href="" class="category-item-kind">Áo phông</a>
                                </div>
-                               <div class="category-item-photo">
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
                                    <a href="">
                                        <img src="/images/categogy/category-aopolo-photo.png" alt="">
                                    </a>
                                    <a href="" class="category-item-kind">Áo polo</a>
                                </div>
-                               <div class="category-item-photo">
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
                                    <a href="">
                                        <img src="/images/categogy/category-aosomi-photo.jpg" alt="">
                                    </a>
                                    <a href="" class="category-item-kind">Áo sơ mi</a>
                                </div>
-                               <div class="category-item-photo">
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
                                    <a href="">
                                        <img src="/images/categogy/category-aolen-photo.png" alt="">
                                    </a>
                                    <a href="" class="category-item-kind">Áo len</a>
                                </div>
-                               <div class="category-item-photo">
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
                                    <a href="">
                                        <img src="/images/categogy/category-bomacnha-photo.png" alt="">
                                    </a>
                                    <a href="" class="category-item-kind">Bộ mặc nhà</a>
                                </div>
-                               <div class="category-item-photo">
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
                                 <a href="">
                                     <img src="/images/categogy/category-dam-photo.png" alt="">
                                 </a>
                                 <a href="" class="category-item-kind">Đầm</a>
                                 </div>
-                                <div class="category-item-photo">
+                                <div class="category-item-photo col c-4 m-3-4 l-2-4">
                                     <a href="">
                                         <img src="/images/categogy/category-chanvay-photo.png" alt="">
                                     </a>
                                     <a href="" class="category-item-kind">Chân váy</a>
                                 </div>
-                                <div class="category-item-photo">
+                                <div class="category-item-photo col c-4 m-3-4 l-2-4">
                                     <a href="">
                                         <img src="/images/categogy/category-quanshort-photo.png" alt="">
                                     </a>
                                     <a href="" class="category-item-kind">Quần shorts</a>
                                 </div>
-                                <div class="category-item-photo">
+                                <div class="category-item-photo col c-4 m-3-4 l-2-4">
                                     <a href="">
                                         <img src="/images/categogy/category-quanjean-photo.png" alt="">
                                     </a>
@@ -170,7 +214,7 @@
                 </div>
                 <div class="block-content">
                     <ul class="product-items">
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -191,7 +235,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -212,7 +256,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -233,7 +277,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -254,7 +298,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -275,7 +319,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -296,7 +340,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -317,7 +361,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -338,7 +382,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -359,7 +403,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -380,7 +424,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -401,7 +445,7 @@
 
                             
                         </li>
-                        <li class="product-card">
+                        <li class="product-card row col c-6 m-4 l-3">
 
                             <div class="product-item-info">
                                 <div class="product-item-photo">
@@ -464,5 +508,6 @@
             </div>
             </footer>
     </div>
+    <script src="/js/thuvien.js"></script>
 </body>
 </html>

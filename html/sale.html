@@ -69,12 +69,53 @@
                             </a>
                         </li>
                         <li class ="header-icon">
-                            <a href="" class = "header-icon-link" Giỏ hàng>
+                            <a  class = "header-icon-link" onclick="showCart()" Giỏ hàng>
                                 <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                                <span id="countsp">0</span>
                             </a>
                         </li>
                 </div>
             </nav>
+            <div class="show-cart" id="showCart">
+                <div class="table-product">
+
+                    <table class="checkout-cart-items" id="table-checkout">
+                        <thead>
+                            <tr>
+                                <th class="col item">
+                                    <span>Sản phẩm</span>
+                                </th>
+                                <th class="col price">
+                                    <span>Giá tiền</span>
+                                </th>
+                                <th class="col qty">
+                                    <span>Số lượng</span>
+                                </th>
+                                <th class="col subtotal">
+                                    <span>Tổng tiền</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody" >
+                            <!-- <script src="/js/clickQty.js"></script> -->
+                        </tbody> 
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    <a href="/html/thanh_toan/gioHang.html">
+                                        <button class="viewCart">
+                                            Xem giỏ hàng
+                                        </button>
+                                    </a>
+                                </td>
+                                    
+                            </tr>
+                        </tfoot>
+                          
+                    </table>  
+                </div>
+                
+            </div>
         </header>
         <main class="main">
             <div class="sale-product-view">
@@ -117,7 +158,7 @@
                     <div class="block-content">
                         <ul class="product-items">
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -136,7 +177,7 @@
                                 </div>   
                             </li>
                             
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -155,7 +196,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -174,7 +215,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -193,7 +234,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -212,7 +253,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -231,7 +272,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -250,7 +291,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -269,7 +310,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -288,7 +329,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -307,7 +348,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -326,7 +367,7 @@
                                 </div>   
                             </li>
 
-                            <li class="product-card">
+                            <li class="product-card row col c-6 m-4 l-3">
                                 <div class="product-item-info">
                                     <div class="product-item-photo">
                                         <a href="/html/chitiensanpham.html" class="product-img-container">
@@ -388,5 +429,6 @@
             </div>
             </footer>
     </div>
+    <script src="/js/thuvien.js"></script>
 </body>
 </html>
