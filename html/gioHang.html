@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hima-Fashion</title>
+    <link rel="stylesheet" href="/css/gioHang.css">
+    <link rel="text/html" href="/css/cai-mac-dinh.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="trang">
+        <header class="khung-dau-trang">
+            <div class="dau-trang">
+
+                <div class = "dau-trang-logo-hang">
+                    <a href="/index.html">
+                        <img src="/anh/anh-hang.png" alt="logo hang">
+                    </a>
+                </div>
+
+                <div class = "dau-trang-doi-tuong">
+                    <li class="dau-trang-tung-doi-tuong">
+                        Thanh toán đơn hàng
+                    </li>  
+                    <li class="dau-trang-tung-doi-tuong">
+                        <a href="/index.html" >Tiếp tục mua sắm</a>
+                    </li>       
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="khung-kiem-tra-buoc-thanh-toan">
+                <ul class="danh-sach-buoc-kiem-tra">
+                    <li class="danh-sach-tung-buoc-kiem-tra hien-tai">
+                        <span class="buoc">1</span>
+                        <span>Giỏ hàng</span>
+                    </li>
+                    <li class="danh-sach-tung-buoc-kiem-tra">
+                        <span class="buoc">2</span>
+                        <span>Đặt hàng</span>
+                    </li>
+                    <li class="danh-sach-tung-buoc-kiem-tra">
+                        <span class="buoc">3</span>
+                        <span>Hoàn tất</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="khung-phan-thanh-toan">
+                <div class="khung-thanh-toan-trai">
+                    <div class="khung-the-thong-bao">
+                        <div class="the-thong-bao">
+                            <div class="bieu-tuong-mien-phi">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <p>
+                                Bạn đủ điều kiên để nhận miễn phí vận chuyển
+                            </p>
+                        </div>
+                    </div>
+                    <div class="khung-gio-hang">
+                        <div class="tieu-de">
+                        <h2>Sản phẩm</h2>
+                        </div>
+                        <table class="bang-gio-hang">
+                            <thead>
+                                <tr>
+                                    <th class="bang-gio-hang-cot bang-gio-hang-cot-sp">
+                                        <span>Sản phẩm</span>
+                                    </th>
+                                    <th class="bang-gio-hang-cot bang-gio-hang-cot-gia">
+                                        <span>Giá tiền</span>
+                                    </th>
+                                    <th class="bang-gio-hang-cot bang-gio-hang-cot-so-luong">
+                                        <span>Số lượng</span>
+                                    </th>
+                                    <th class="bang-gio-hang-cot bang-gio-hang-cot-tong-tien">
+                                        <span>Tổng tiền</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="than-bang" > </tbody>   
+                        </table>  
+                        <!-- <script src="/js/totalCart.js"></script>        -->
+                    </div>
+                </div>
+
+                <div class="khung-thanh-toan-phai">
+                    <div class="khung-don-hang">
+                        <div class="tieu-de-1">Đơn hàng</div>
+                        <div class="tong-don-hang">
+                            <table>
+                                <tbody id="tong-tien-thanh-toan">
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="dat-hang">
+                            <a href="/html/datHang.html">
+                                <button class="nut-dat-hang">Đặt hàng</button>
+                            </a>
+                            
+                        </div>
+                        <div class="hinh-thuc-thanh-toan">
+                            <p>
+                                Chúng tôi chấp nhận thanh toán:
+                            </p> 
+                            <img src="/anh/thanh_toan/hinh-thuc-thanh-toan.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="tieu-de">Có thể bạn sẽ thích</div>
+              
+                <div>
+                    <div  id="cuon-danh-sach-san-pham">
+                        <i class="fa-solid fa-angle-left" onclick="trai()"></i>
+                        <i class="fa-solid fa-angle-right" onclick="phai()"></i>
+
+                            <div class="thong-tin-san-pham  cot c-6 m-4 l-3">
+                                <div>
+                                    <a href="" class="anh-san-pham">
+                                        <img src="/anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="chi-tiet-the-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="">Áo phông nữ</a>
+                                    </h4>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thong-tin-san-pham  cot c-6 m-4 l-3">
+                                <div>
+                                    <a href="" class="anh-san-pham">
+                                        <img src="/anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="chi-tiet-the-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="">Áo phông nữ</a>
+                                    </h4>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thong-tin-san-pham  cot c-6 m-4 l-3">
+                                <div>
+                                    <a href="" class="anh-san-pham">
+                                        <img src="/anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="chi-tiet-the-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="">Áo phông nữ</a>
+                                    </h4>
+                                    <div>
+                                        <span class="gia">19.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thong-tin-san-pham  cot c-6 m-4 l-3">
+                                <div>
+                                    <a href="" class="anh-san-pham">
+                                        <img src="/anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="chi-tiet-the-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="">Áo phông nữ</a>
+                                    </h4>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="thong-tin-san-pham  cot c-6 m-4 l-3">
+                                <div>
+                                    <a href="" class="anh-san-pham">
+                                        <img src="/anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="chi-tiet-the-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="">Áo phông nữ</a>
+                                    </h4>
+                                    <div>
+                                        <span class="gia">19.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+    </div>
+    <!-- <script src="/js/sanPham.js"></script> -->
+    <script src="/js/thuvien.js"></script>
+    <script>
+         hienThiGH();
+    </script>
+    <script>
+        datHang();
+    </script>
+    <script src="/js/cuonSP.js"></script>
+</body>
+</html>

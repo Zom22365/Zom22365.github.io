@@ -95,6 +95,8 @@
     margin-top: 20px;
     position: absolute;
     right: 56px;
+    
+    
    
 }
 
@@ -215,7 +217,7 @@
 
 .bang-gio-hang{
     background-color: #f6f6f6;
-    table-layout: fixed;
+   table-layout: fixed;
     position: absolute;
     border: 1px solid #c4c4ca;
     margin-right: 40px;
@@ -253,23 +255,23 @@
 }
 
 
-.bang-gio-hang .bang-gio-hang-cot.bang-gio-hang-cot-sp {
+.bang-gio-hang .bang-gio-hang-cot .bang-gio-hang-cot-sp {
     width: 190px;
 }
 
-.bang-gio-hang .bang-gio-hang-cot.bang-gio-hang-cot-gia {
+.bang-gio-hang .bang-gio-hang-cot .bang-gio-hang-cot-gia {
     width: 95px;
     font-size: 10px;
     font-weight: 500;
 }
 
-.bang-gio-hang .bang-gio-hang-cot.bang-gio-hang-cot-so-luong {
+.bang-gio-hang .bang-gio-hang-cot .bang-gio-hang-cot-so-luong {
     width: 95px;
     font-size: 10px;
     font-weight: 500;
 }
 
-.bang-gio-hang  .bang-gio-hang-cot.bang-gio-hang-cot-tong-tien {
+.bang-gio-hang  .bang-gio-hang-cot .bang-gio-hang-cot-tong-tien {
     width: 100px;
     font-size: 10px;
     font-weight: 500;
@@ -514,133 +516,119 @@
     cursor: pointer;
 }
 
-/* phan man hinh xem chinh */
+/* quang cao home-page */
 
-.phan-loai{
-    margin-top: 80px;
-    margin-left: 40px;
+.khung-chay-quang-cao{
+    margin: 80px 0px 0px 0px;
+    margin: 80px 40px 0px 40px;
+    overflow: hidden;
 }
 
-.phan-loai ul{
+.chay-quang-cao-thu-cong{
+    position:absolute;
+    width: 97%;
+    margin-top: 29%;
     display: flex;
-    list-style: none;
+    justify-content: center;
+}
+
+.nut-chuyen-quang-cao{
+    border: 2px solid #fff;
+    padding: 5px;
+    margin-right: 24px;
+    z-index: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
     
 }
-.phan-loai ul li{
-    margin-right: 2px;
-    margin-left: 2px;
-    color: #c8c7cc;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 21px;
-}
-.phan-loai ul a{
-    text-decoration: none;
-    margin-right: 2px;
-    margin-left: 2px;
-    color: #c8c7cc;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 21px;
+
+.nut-chuyen-quang-cao:hover{
+    background-color: #fff;
 }
 
-.phan-loai a:hover{
-    text-decoration:underline;
-    color: #000;
-    transition: all 0.5s;
+#o-chon1:checked ~ .muc-quang-cao{
+    transform: translate(0%, 0%);
 }
 
-
-.anh-bia-trang-san-pham{
-    margin: 5px 40px 10px 40px;
-    display: block;
+#o-chon2:checked ~ .muc-quang-cao{
+    transform: translate(-100%, 0%);
+}
+#o-chon3:checked ~ .muc-quang-cao{
+    transform: translate(-200%, 0%);
 }
 
-.anh-bia-trang-san-pham img{
-    width: 100%;
-}
-.khung-chia-cot{
+.chay-quang-cao{
+    width: 300%;
     display: flex;
+}
+
+.chay-quang-cao input{
+    display:none;
+}
+
+.muc-quang-cao{
+   transition: 2s;
+}
+
+.muc-quang-cao img{
+    width: 100%;
+   
+}
+
+.chay-quang-cao-tu-dong{
+    position: absolute;
+    width: 97%;
+    margin-top: 29%;
+    display: flex;
+    justify-content: center;
+
+}
+.chay-quang-cao-tu-dong div{
+    border: 2px solid #fff;
+    padding: 5px;
+    margin-right: 24px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#o-chon1:checked ~ .chay-quang-cao-tu-dong .nut-tu-dong-1{
+    background: #fff;
+}
+#o-chon2:checked ~ .chay-quang-cao-tu-dong .nut-tu-dong-2{
+    background: #fff;
+}
+#o-chon3:checked ~ .chay-quang-cao-tu-dong .nut-tu-dong-3{
+    background: #fff;
+}
+
+/* san pham gia tot*/
+.tieu-de-1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 20px 0px 10px 40px;
+}
+.san-pham-gia-tot{
+  
+    margin: 0px 40px ;
+}
+.san-pham-gia-tot img{
+    width: 100%;
+    height: 100%;
+}
+
+/* san pham moi*/
+
+.khung-muc-san-pham{
     margin: 0px 40px;
 }
-
-.cot-danh-muc{
-    margin-top: 24px;
-}
-
-.cot-danh-muc ul li{
-    list-style: none;
-    margin-bottom: 10px; 
-}
-
-.cot-danh-muc h4{
-    margin-top: 20px;
-    margin-bottom: 10px; 
-}
-
-.cot-danh-muc ul li a{
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 400;
-    color: #444f48;
-    line-height: 24px;
-    display: block;
-
-}
-
-.cot-danh-muc h4 a{
-    text-decoration: none;
-    font-size: 14px;
+.tieu-de-2{
+    font-size: 2.4rem;
     font-weight: 700;
-     color: #444f48;
-    line-height: 24px;
-    display: block;
-}
-
-.cot-danh-muc h4 a:hover{
-    text-decoration:underline;
-    color: #da291c;
-    transition: all 0.5s;
-}
-
-.cot-danh-muc ul li a:hover{
-    text-decoration:underline;
-    color: #da291c;
-    transition: all 0.5s;
-}
-
-.cot-danh-muc a.cot-danh-muc{
-    color: #da291c;
-}
-
-.khung-trang-ben-phai{
-    float: right;
-    color: #424242;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+    line-height: 36px;
+    margin-top: 40px;
     margin-bottom: 10px;
-}
-
-.nhan-sap-xep{
-    background-color: #f6f6f6;
-    height: 40px;
-    padding-right: 16px;
-    padding-left: 16px;
-    color: #da291c;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.nhan-sap-xep i{
-    padding-left: 5px;
-}
-.nhan-sap-xep:hover{
-    background-color: #d4d6d8;
-}
-
-.cot-san-pham{
-    clear: both;
 }
 
 .danh-sach-san-pham{
@@ -648,13 +636,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  
 }
+
 .the-san-pham{
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
 
 .thong-tin-san-pham{
     display: block;
@@ -696,7 +683,6 @@
     font-size: 14px;
     line-height: 1.5;
 }
-
 
 /*phan chan trang*/
 

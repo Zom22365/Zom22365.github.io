@@ -4,8 +4,8 @@
         <meta charset = "UTF-8" > 
         <meta name ="veiwport" content = "width=device-width, initital-scale = 1.0">
         <title>Hima-Fashion</title>
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="text/html" href="/css/base.css">
+        <link rel="stylesheet" href="css/trang-chu.css">
+        <link rel="text/html" href="css/cai-mac-dinh.css">
         <link rel="stylesheet" href="font/fontawesome-free-6.0.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,101 +13,98 @@
     </head>
     <body>
         <!-- grid wide -->
-        <div class=" app">
-            <header class="header">
-                    <nav class="header__navbar">
-                        <input type="checkbox" id="check">
-                        <!-- col l-0 m-0 c-1 -->
-                        <label for="check" class="checkbtn">
+        <div class="trang">
+            <header class="khung-dau-trang">
+                    <nav class="dau-trang">
+                        <input type="checkbox" id="danh-sach-doi-tuong">
+                        <!-- cot l-0 m-0 c-1 -->
+                        <label for="danh-sach-doi-tuong" class="thanh-truot-doi-tuong">
                             <i class="fa-solid fa-bars"></i>
                         </label>
-                        <!-- col l-1 m-1 -->
-                        <div class = "header__navbar-logo">
-                            <a href="/index.html">
-                                <img src="images/logo.png" alt="logo">
+                        <!-- cot l-1 m-1 -->
+                        <div class = "dau-trang-logo-hang">
+                            <a href="index.html">
+                                <img src="anh/anh-hang.png" alt="logo hang">
                             </a>
                         </div>
-                        <!-- col l-6 m-8 -->
-                        <div class = "header__navbar-menu ">
-                            <li class="haeder__navbar-menu-item">
-                                <a href="/index.html" class="active">TRANG CHỦ</a>
+                        <!-- cot l-6 m-8 -->
+                        <div class = "dau-trang-doi-tuong">
+                            <li class="dau-trang-tung-doi-tuong">
+                                <a href="index.html" class="trang-hien-tai">TRANG CHỦ</a>
                             </li>
-                            <li class="haeder__navbar-menu-item">
-                                <a href="/html/nu.html" >NỮ</a>
+                            <li class="dau-trang-tung-doi-tuong">
+                                <a href="html/nu.html" >NỮ</a>
                             </li>
-                            <li class="haeder__navbar-menu-item">
-                                <a href="/html/nam.html" >NAM</a>
+                            <li class="dau-trang-tung-doi-tuong">
+                                <a href="html/nam.html" >NAM</a>
                             </li>
-                            <li class="haeder__navbar-menu-item">
-                                <a href="/html/treem.html">TRẺ EM</a> 
+                            <li class="dau-trang-tung-doi-tuong">
+                                <a href="html/treem.html">TRẺ EM</a> 
                             </li>
-                            <li class="haeder__navbar-menu-item">
-                                <a href="/html/sale.html" >SALE</a>
+                            <li class="dau-trang-tung-doi-tuong">
+                                <a href="html/giam-gia.html" >SALE</a>
                             </li>         
                     </div>
                     <!-- col l-4 m-0 c-0 -->
-                        <div class= "header__navbar-search ">
-                            <button class ="search-btn">
+                        <div class= "dau-trang-tim-kiem">
+                            <button class ="nut-tim-kiem">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <input type="text" name placeholder="Bạn tìm gì..." class = "search-input">
+                            <input type="text" name placeholder="Bạn tìm gì..." class = "nhap-tim-kiem">
                         </div>
                         <!-- l-4 m-4 -->
-                        <div class = "header__navbar-icon ">
-                                <li class ="header-icon">
-                                    <a href="" class = "header-icon-link" Thông báo>
-                                        <i class="fa-solid fa-bell fa-lg"></i>
-                                    </a>
-                                </li>
-                                <li class ="header-icon">
-                                    <a href="" class = "header-icon-link" Trợ giúp>
-                                        <i class="fa-solid fa-circle-info fa-lg"></i>
-                                    </a>
-                                </li>
-                                <li class ="header-icon">
-                                    <a href="" class = "header-icon-link" Đăng nhập>
-                                        <i class="fa-solid fa-user fa-lg"></i>
-                                    </a>
-                                </li>
-                                <li class ="header-icon">
-                                    <a  class = "header-icon-link" onclick="showCart()" Giỏ hàng>
-                                        <i class="fa-solid fa-bag-shopping fa-lg"></i>
-                                        <span id="countsp">0</span>
-                                    </a>
-                                </li>
-                               
-                        </div>
+                        <div class = "dau-trang-bieu-tuong">
+                            <li class ="bieu-tuong">
+                                <a href="" class = "duong-dan-bieu-tuong" Thông báo>
+                                    <i class="fa-solid fa-bell fa-lg"></i>
+                                </a>
+                            </li>
+                            <li class ="bieu-tuong">
+                                <a href="" class = "duong-dan-bieu-tuong" Trợ giúp>
+                                    <i class="fa-solid fa-circle-info fa-lg"></i>
+                                </a>
+                            </li>
+                            <li class ="bieu-tuong">
+                                <a  class = "duong-dan-bieu-tuong" onclick="hienThiBieuMau()" Đăng nhập-Đăng ký>
+                                <i class="fa-solid fa-user fa-lg"></i>
+                                </a>
+                            </li>
+                            <li class ="bieu-tuong">
+                                <a  class = "duong-dan-bieu-tuong" onclick="dieuKhienHienThi()" Giỏ hàng>
+                                <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                                <span id="dem-san-pham-trong-gio">0</span>
+                                </a>
+                            </li> 
+                    </div>
 
                         
                     </nav>
-                    <div class="show-cart" id="showCart">
-                        <div class="table-product">
+                    <div id="hien-thi-gio-hang">
+                        <div class="bang-san-pham">
         
-                            <table class="checkout-cart-items" id="table-checkout">
+                            <table class="bang-gio-hang" id="gio-hang-nho">
                                 <thead>
                                     <tr>
-                                        <th class="col item">
+                                        <th class="bang-gio-hang-cot bang-gio-hang-cot-sp">
                                             <span>Sản phẩm</span>
                                         </th>
-                                        <th class="col price">
+                                        <th class="bang-gio-hang-cot bang-gio-hang-cot-gia">
                                             <span>Giá tiền</span>
                                         </th>
-                                        <th class="col qty">
+                                        <th class="bang-gio-hang-cot bang-gio-hang-cot-so-luong">
                                             <span>Số lượng</span>
                                         </th>
-                                        <th class="col subtotal">
+                                        <th class="bang-gio-hang-cot bang-gio-hang-cot-tong-tien">
                                             <span>Tổng tiền</span>
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody id="tbody" >
-                                    <!-- <script src="/js/clickQty.js"></script> -->
-                                </tbody> 
+                                <tbody id="than-bang" > </tbody> 
                                 <tfoot>
                                     <tr>
                                         <td colspan="4">
-                                            <a href="/html/thanh_toan/gioHang.html">
-                                                <button class="viewCart">
+                                            <a href="./html/gioHang.html">
+                                                <button class="xem-gio-hang">
                                                     Xem giỏ hàng
                                                 </button>
                                             </a>
@@ -120,286 +117,350 @@
                         </div>
                         
                     </div>
+                    <div id="gio-hang-trong">
+                        <div class="anh-gio-hang-trong">
+                            <img src="anh/gio_hang/gio_hang_trong.png" alt="">
+                            <p>Chưa có sản phẩm <br> trong giỏ hàng của bạn.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="bieu-mau-dang-nhap">
+                        <div class="khung-bieu-mau">
+                            <div class="dau-bieu-mau">
+                                <h2>Đăng nhập</h2>
+                            </div>
+                            <div class="thong-tin-bieu-mau">
+                                <b>Cảm ơn bạn đã trở lại.</b>
+                                <div class="nhom-bieu-mau">
+                                    <label class="nhan-dan"> Tên đăng nhập</label>
+                                    <input type="text" class = "nhap-thong-tin" >
+                                </div>
+                                <div class="nhom-bieu-mau">
+                                    <label class="nhan-dan">Mật khẩu</label>
+                                    <input type="text" class = "nhap-thong-tin" >
+                                </div>
+                            </div>
+                            <div class="khung-nut">
+                                <button class="nut">Tiếp tục</button>
+                            </div>
+                            <div class="chan-bieu-mau">
+                                <p>Bạn chưa có tài khoản? <a onclick="bieuMauDK()">Đăng ký</a> tại đây.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bieu-mau-dang-ky">
+                        <div class="khung-bieu-mau">
+                            <div class="dau-bieu-mau">
+                                <h2>Đăng ký</h2>
+                            </div>
+                            <div class="thong-tin-bieu-mau">
+                                <b>Đăng ký để được phục vụ tốt hơn.</b>
+                                <div class="nhom-bieu-mau">
+                                    <label class="nhan-dan">Họ tên</label>
+                                    <input type="text" class = "nhap-thong-tin" >
+                                </div>
+                                <div class="nhom-bieu-mau">
+                                    <label class="nhan-dan">Tên đăng nhập</label>
+                                    <input type="text" class = "nhap-thong-tin" >
+                                </div>
+                                <div class="nhom-bieu-mau">
+                                    <label class="nhan-dan">Mật khẩu</label>
+                                    <input type="text" class = "nhap-thong-tin" >
+                                </div>
+                                <div class="nhom-bieu-mau">
+                                    <label class="nhan-dan">Xác nhận lại mật khẩu</label>
+                                    <input type="text" class = "nhap-thong-tin" >
+                                </div>
+                            </div>
+                            <div class="khung-nut">
+                                <button class="nut">Tiếp tục</button>
+                            </div>
+                            <div class="chan-bieu-mau">
+                                <p>Bạn đã có tài khoản? <a onclick="bieuMauDN()">Đăng nhập</a> tại đây.</p>
+                            </div>
+                        </div>
+                    </div> 
             </header>   
-            <main class="main">
-                    <div class="slider"> 
-                        <div class="navigation-manual">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn" ></label>
+            <main >
+                    <div class="khung-chay-quang-cao"> 
+                        <div class="chay-quang-cao-thu-cong">
+                            <label for="o-chon1" class="nut-chuyen-quang-cao"></label>
+                            <label for="o-chon2" class="nut-chuyen-quang-cao"></label>
+                            <label for="o-chon3" class="nut-chuyen-quang-cao" ></label>
                         </div> 
-                        <div class="slides">
+                        <div class="chay-quang-cao">
                             
-                            <input type="radio" name="radio-btn" id="radio1">
-                            <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="nut-chuyen-anh" id="o-chon1">
+                            <input type="radio" name="nut-chuyen-anh" id="o-chon2">
+                            <input type="radio" name="nut-chuyen-anh" id="o-chon3">
                             
-                            <div class="slide">
-                                <a href="/html/bosuutap.html">
-                                    <img src="/images/home-page/home-page-1.png" alt="">
+                            <div class="muc-quang-cao">
+                                <a href="html/bosuutap.html">
+                                    <img src="anh/trang-chu/anh-bo-suu-tap-1.png" alt="">
                                 </a>
                             </div>
-                            <div class="slide">  
-                                <a href="/html/bosuutap.html" >
-                                    <img src="/images/home-page/home-page-2.jpg" alt="">
+                            <div class="muc-quang-cao">  
+                                <a href="html/bosuutap.html" >
+                                    <img src="anh/trang-chu/anh-bo-suu-tap-2.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="slide">  
-                                <a href="/html/bosuutap.html" >
-                                    <img src="/images/home-page/home-page-3.png" alt="">
+                            <div class="muc-quang-cao">  
+                                <a href="html/bosuutap.html" >
+                                    <img src="anh/trang-chu/anh-bo-suu-tap-3.png" alt="">
                                 </a>
                             </div>
-                            <div class="navigation-auto">
-                                <div class="auto-btn1"></div>
-                                <div class="auto-btn2"></div>
-                                <div class="auto-btn3"></div>
+                            <div class="chay-quang-cao-tu-dong">
+                                <div class="nut-tu-dong-1"></div>
+                                <div class="nut-tu-dong-2"></div>
+                                <div class="nut-tu-dong-3"></div>
                             </div>
                         </div>
     
                         
                     </div> 
                 
-                <div class="best-products">
-                    <div class="banner-text" >
-                        <h2 class="title1">Sản phẩm giá tốt</h2>
+                <div>
+                    <div>
+                        <h2 class="tieu-de-1">Sản phẩm giá tốt</h2>
                     </div>
-                    <div class="best-product">
-                        <a href="/html/sanphamgiatot.html">
-                            <img src="/images/home-page/san-pham-gia-tot-1.png" alt="">
+                    <div class="san-pham-gia-tot">
+                        <a href="html/sanphamgiatot.html">
+                            <img src="anh/trang-chu/san-pham-gia-tot-1.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="block-product-tab">
-                <div class="block-heading">
-                    <h2 class="title">Sản phẩm mới</h2>
-                </div>
-                <div class="block-content">
-                    <ul class="product-items">
 
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                <div class="khung-muc-san-pham">
+                <div>
+                    <h2 class="tieu-de-2">Sản phẩm mới</h2>
+                </div>
+                <div>
+                    <ul class="danh-sach-san-pham">
+
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
-                                    <!-- <button onclick="addCart()"  class="btn-add-cart">Thêm vào giỏ hàng</button> -->
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
                         
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
 
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>   
+                        </li>
+                        
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
+                                    </a>
+                                </div>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h4>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
 
-                        <li class="product-card  row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
 
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
 
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
 
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
 
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
 
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
 
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
                         </li>
 
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                        <li class="the-san-pham hang cot c-6 m-4 l-3">
+                            <div class="thong-tin-san-pham">
+                                <div class="anh-san-pham">
+                                    <a href="html/chitiensanpham.html">
+                                        <img src="anh/san_pham/nu/ao-phong-nu/ao-phong-nu-don-gian.jpg" alt="anh-san-pham-moi">
                                     </a>
                                 </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                <div class="thong-tin-chi-tiet-san-pham">
+                                    <a href="" class="loai-san-pham" >Áo phông</a>
+                                    <h4 class="ten-san-pham">
+                                        <a href="html/chitiensanpham.html">Áo phông nữ</a>
                                     </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
-                                    </div>
-                                </div>
-                            </div>   
-                        </li>
-
-                        <li class="product-card row col c-6 m-4 l-3">
-                            <div class="product-item-info">
-                                <div class="product-item-photo">
-                                    <a href="/html/chitiensanpham.html" class="product-img-container">
-                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
-                                    </a>
-                                </div>
-                                <div class="product-item-details">
-                                    <a href="" class="kind-product" >Áo phông</a>
-                                    <h4 class="product-item-name">
-                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
-                                    </h4>
-                                    <div class="price-box">
-                                        <span class="price">169.000 ₫</span>
+                                    <div>
+                                        <span class="gia">169.000 ₫</span>
                                     </div>
                                 </div>
                             </div>   
@@ -408,10 +469,10 @@
                 </div>
                 </div>
             </main>
-            <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footert-col">
+            <footer>
+            <div class="khung-chan-trang">
+                <div class="hang-chan-trang">
+                    <div class="cot-chan-trang">
                         <h4>Thông tin công ty</h4>
                         <ul>
                             <li>Trụ sở chính: Đông Thành, H.Xuân Trường, T.Nam Định</li>
@@ -420,23 +481,23 @@
                             <li>Địa chỉ email:xxxx@hima.com</li>
                         </ul>
                     </div>
-                    <div class="footert-col">
+                    <div class="cot-chan-trang">
                         <h4>Thương hiệu</h4>
                         <ul>
                             <li><a href="">Giới thiệu</a></li>
                             <li><a href="">Liên hệ</a></li>
                         </ul>
                     </div>
-                    <div class="footert-col">
+                    <div class="cot-chan-trang">
                         <h4>Hỗ trợ</h4>
                         <ul>
                             <li><a href="">Hướng dẫn mua hàng</a></li>
                             <li><a href="">Kiểm tra đơn hàng</a></li>
                         </ul>
                     </div>
-                    <div class="footert-col">
+                    <div class="cot-chan-trang">
                         <h4>Theo dõi</h4>
-                        <div class="social-licks">
+                        <div class="duong-dan-tai-khoan-xa-hoi">
                             <li><a href="">
                                 <i class="fa-brands fa-facebook"></i>
                             </a></li>
@@ -446,7 +507,8 @@
             </div>
             </footer>
         </div>
-        <script language ="javascript" src="/js/main.js"></script>
-        <script src="/js/thuvien.js"></script>
+        <script language ="javascript" src="js/chuyenanh.js"></script>
+        <script src="js/thuvien.js"></script>
+        <script src="js/bieuMau.js"></script>
     </body>
 </htm>

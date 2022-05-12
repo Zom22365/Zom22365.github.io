@@ -1,12 +1,13 @@
-@import 'base.css';
+@import 'cai-mac-dinh.css';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Phan navbar*/
-.header {
+/* Phan dau trang*/
+
+.khung-dau-trang {
     position:fixed;
     height: 80px;
     width: 100%;
@@ -16,30 +17,30 @@
    background-color: #fff;
 }
 
-.header__navbar {
+.dau-trang{
     display: flex;
     align-items:center; 
     height: 80px;
     margin-right: 40px;
     margin-left:  40px; 
 }
-.header__navbar-logo{
+.dau-trang-logo-hang{
     flex: 0.2;
 }
-.header__navbar-logo img {
+.dau-trang-logo-hang img {
   
     width: 70px;
     height: 40px;
     margin-top: 20px;
       
 }
-.header__navbar-menu{
-    flex: 3;
+.dau-trang-doi-tuong{
+    flex: 4;
     margin-top: 20px;
-    margin-left: 24px;
+    margin-left: 40px;
 }
 
-.haeder__navbar-menu-item {
+.dau-trang-tung-doi-tuong {
    
     display: inline-block;
     font-size: 1.4rem;
@@ -49,13 +50,18 @@
     
     
 }
-.haeder__navbar-menu-item a{
+.dau-trang-tung-doi-tuong a{
     text-decoration: none;
     color:  #6c757b;
    
 }
 
-.header__navbar-search {
+.dau-trang-tung-doi-tuong a:hover, a.trang-hien-tai{
+    color: #000;
+    transition: .5s;
+}
+
+.dau-trang-tim-kiem {
     flex: 2;
     font-weight: 500;
     background-color: #f6f6f6;
@@ -66,15 +72,15 @@
     right: 224px;
 }
 
-.search-btn {
+.nut-tim-kiem {
     background-color: #f6f6f6;
     border-radius: 1.6rem;
     margin-left: 10px;
-    color: #636c73;
+    color: #646c74;
     border: none;
 }
 
-.search-input {
+.nhap-tim-kiem {
     margin-top: 10px;
     font-size: 1.4rem;
     margin-left: 10px;
@@ -83,7 +89,7 @@
     border: none;
     color: #4a5051;
 }
-.header__navbar-icon{
+.dau-trang-bieu-tuong{
     float: right;
     flex: 1.5;
     margin-top: 20px;
@@ -94,7 +100,7 @@
    
 }
 
-.header-icon {
+.bieu-tuong {
    
     display: inline-block;
     font-size: 1.4rem;
@@ -102,12 +108,12 @@
     
 }
 
-.header-icon-link {
+.duong-dan-bieu-tuong {
     color: rgba(0, 0, 0, 0.801);
 }
 
-#countsp {
-    background-color: #63b1bc;
+#dem-san-pham-trong-gio {
+    background-color: #64b1bc;
     color: #fff;
     position: absolute;
     margin-top: -5px;
@@ -120,12 +126,8 @@
     
 }
 
-.haeder__navbar-menu-item a:hover, a.active{
-    color: #000;
-    transition: .5s;
-}
 
-.checkbtn{
+.thanh-truot-doi-tuong{
     font-size: 24px;
     color: #000;
     float: left;
@@ -135,34 +137,36 @@
     cursor: pointer;
     display: none;
 }
-#check{
+
+#danh-sach-doi-tuong{
     display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
-    .header__navbar-logo{
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .dau-trang-logo-hang{
         flex: 0.2;
     }
-    .header__navbar-logo img{
+    .dau-trang-logo-hang img{
         width: 70px;
         height: 40px;
         margin-top: 20px;
         
     }
-    .header__navbar-menu{
+    .dau-trang-doi-tuong{
         flex: 2;
         margin-top: 20px;
     }
-    .haeder__navbar-menu-item {
+    .dau-trang-tung-doi-tuong{
         font-size: 1.4rem;
         font-weight: 700;
         color:  #6c757b;
         cursor: pointer;
     }
-    .header__navbar-search{
+    .dau-trang-tim-kiem {
         display: none;
     }
-    .header__navbar-icon{
+    .dau-trang-bieu-tuong{
         flex: 1;
        
     }
@@ -170,16 +174,13 @@
 }
 
 @media (max-width:767px){
-    .checkbtn{
+    .thanh-truot-doi-tuong{
         display: block; 
     }
-    .header__navbar-logo{
+    .dau-trang-logo-hang{
         flex: 1;
     }
-    .header__navbar-search{
-        display: none;
-    }
-    .header__navbar-menu{
+    .dau-trang-doi-tuong{
         position: fixed;
         width: 100%;
         height: 700px;
@@ -190,70 +191,58 @@
         text-align:left;
         transition: all 0.5s;
     }
-    .haeder__navbar-menu-item{
+    .dau-trang-tung-doi-tuong{
         display: block;
-        margin: 20px 0px 30px 40px;
+        margin: 20px 0px 40px 40px;
     }
-    .a:hover, a.active{
+    .dau-trang-tung-doi-tuong a:hover, a.trang-hien-tai{
         color: #000;
         transition: .5s;
     }
-    #check:checked ~ .header__navbar-menu{
+    #danh-sach-doi-tuong:checked ~ .dau-trang-doi-tuong{
         right: 0px;
     }
-    .header__navbar-icon{
+    .dau-trang-tim-kiem {
+        display: none;
+    }
+    .dau-trang-bieu-tuong{
         flex: 1;
        
     }
 
 }
 
+
 /* giohang */
 
-.checkout-cart-items{
+.bang-gio-hang{
     background-color: #f6f6f6;
    table-layout: fixed;
     position: absolute;
     border: 1px solid #c4c4ca;
     margin-right: 40px;
-    /* width: 480px; */
     right: 0;
     font-size: 11px;
     font-weight: 500;
     line-height: 16px; 
 }
 
-.viewCart{
-    width: 100%;
-    background-color: #63b1bc;
-    color: #fff;
-    border: 1px solid  #c4c4ca;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 36px;
-    
-   
-}
-
-.checkout-cart-items thead{
+.bang-gio-hang thead{
     display: table;
-    /* width: 480px; */
 }
 
-.checkout-cart-items tbody{
+.bang-gio-hang tbody{
     display: block;
     height: 340px;
-    /* width: 480px; */
     overflow:auto;
-   
 }
-.checkout-cart-items tbody tr{
+
+.bang-gio-hang tbody tr{
     display: table;
-    /* width: 420px; */
     table-layout: fixed;
 }
-.checkout-cart-items thead tr .col {
+
+.bang-gio-hang thead tr .bang-gio-hang-cot{
     background: #333f48;
     color: #e8e8ea;
     font-weight: 500;
@@ -262,48 +251,38 @@
     padding: 12px 16px;
     text-align:center;
     text-transform: uppercase;
-   
     border-bottom: 1px solid #f6f6f6;
 }
 
 
-.checkout-cart-items .col.item {
+.bang-gio-hang .bang-gio-hang-cot .bang-gio-hang-cot-sp {
     width: 190px;
-    
 }
 
-.checkout-cart-items .col.price {
-    width: 95px;
-    /* padding-left: 15px; */
-    font-size: 10px;
-    font-weight: 500;
-    /* background-color: #63b1bc; */
-}
-
-.checkout-cart-items .col.qty {
+.bang-gio-hang .bang-gio-hang-cot .bang-gio-hang-cot-gia {
     width: 95px;
     font-size: 10px;
     font-weight: 500;
-    /* background-color: pink; */
-    /* padding-left: 15px; */
 }
 
-.checkout-cart-items .col.subtotal {
+.bang-gio-hang .bang-gio-hang-cot .bang-gio-hang-cot-so-luong {
+    width: 95px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.bang-gio-hang  .bang-gio-hang-cot .bang-gio-hang-cot-tong-tien {
     width: 100px;
-    /* padding-left: 25px; */
     font-size: 10px;
     font-weight: 500;
-    /* background-color: royalblue; */
 }
 
-.checkout-cart-items .cart-item-info {
+.bang-gio-hang .o-gio-hang-thong-tin-sp{
     display: flex;
     width: 190px;
-    /* background: #000; */
-    
 }
 
-.checkout-cart-items .cart-item-photo {
+.bang-gio-hang .o-gio-hang-anh-sp{
     margin-right: 12px;
     position: relative;
     width: 60px;
@@ -311,11 +290,11 @@
    
 }
 
-.checkout-cart-items .cart-item-photo  img {
+.bang-gio-hang .o-gio-hang-anh-sp img {
     max-width: 100%;
 }
 
-.checkout-cart-items .cart-item-name a {
+.bang-gio-hang  .o-gio-hang-ten-sp a {
     text-decoration: none;
     font-weight: 500;
     font-size: 10px;
@@ -324,53 +303,27 @@
     margin-bottom: 13px;
 }
 
-.checkout-cart-items .cart-item-name a:hover {
+.bang-gio-hang .o-gio-hang-ten-sp a:hover {
    color: #000;
    text-decoration: underline;
 }
 
-.checkout-cart-items .cart-item-option .swatch-option.text {
+.bang-gio-hang  .o-gio-hang-kich-co-sp .xem-lua-chon .chu {
     font-weight: 600;
     font-size: 10px;
     line-height: 16px;
 }
 
-.price-pro{
+.gia-san-pham{
     margin-left: 16px;
-    /* padding-left: 25px; */
 }
 
-.checkout-cart-items .cart-item-qty {
+.bang-gio-hang .o-gio-hang-so-luong-sp {
     display: flex;
-   
-    /* padding-left: 50px; */
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
-
-/* .checkout-cart-items .cart-item-qty .btn-number {
-    width: 18px;
-    height: 10px;
-    border: 1px solid  #77757f;
-    border-radius: 100%;
-    cursor: pointer;
-    min-width: 18px;
-    text-align: center;
-    padding-bottom: 16px;
-    text-decoration: none;
-   
-    
-} */
-
-/* .cart-item-qty span{
-    font-size: 10px;
-    font-weight: 500;
-    color: #77757f;
-} */
-
-
-.input-cart-item-qty {
+.o-gio-hang-nhap-so-luong-sp {
     width: 25px;
     text-align: center;
     color: #333f48;
@@ -384,11 +337,11 @@
     outline: none;
 }
 
-.total-price{
+.tong-gia{
     margin-left: 16px;
 }
 
-.btn-del{
+.nut-xoa{
    float: right;
    display: none;
    font-size: 7px;
@@ -399,22 +352,182 @@
    border: 1px solid #333f48;
 }
 
-.checkout-cart-items tbody tr:hover .btn-del{
+.bang-gio-hang tbody tr:hover .nut-xoa{
     display: block;
 }
 
+.xem-gio-hang{
+    width: 100%;
+    background-color: #63b1bc;
+    color: #fff;
+    border: 1px solid  #c4c4ca;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+}
 
-.kind-tab{
+#gio-hang-trong{
+    display: none;
+    width: 360px;
+    padding: 0 20px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 10%), 0 0 16px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    right: 40px;
+    position: absolute;
+    top: 100%;
+    border: 1px solid #f6f6f6;
+}
+
+.anh-gio-hang-trong {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333f48;
+    line-height: 18px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.anh-gio-hang-trong img{
+    display: block;
+    width: 98px;
+    height: 98px;
+    margin: 16px auto;
+}
+
+/* bieu mau dang ky dang nhap */
+
+#bieu-mau-dang-nhap{
+    height: 800px;
+    background: rgba(51,63,72,.34);
+    position: relative;
+    
+}
+#bieu-mau-dang-ky{
+    height: 800px;
+    background: rgba(51,63,72,.34);
+    position: relative;
+}
+
+.khung-bieu-mau{
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    border: 1px solid #d2d1d4;
+    margin-left: 40%;
+    margin-top: 2%;
+    position: absolute;
+}
+
+.dau-bieu-mau{
+    text-align: center;
+    margin: 10px 40px;
+    border-bottom: 1px solid #d2d1d4;
+}
+
+.dau-bieu-mau h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 46px;
+   
+}
+
+.thong-tin-bieu-mau b{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.thong-tin-bieu-mau div{
+    margin: 20px 40px;
+    background: #f9f9f9;
+    position: relative;
+    border-bottom: 1px solid #d2d1d4;
+}
+
+.thong-tin-bieu-mau input{
+    width: 100%;
+}
+
+.thong-tin-bieu-mau label {
+    display: block;
+    color: #77757f;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.hieu-ung{
+    font-size: 11px !important;
+    transform: translateY(-50%);
+}
+
+.nhap-thong-tin {
+    width: 100%;
+    background: #f9f9f9;
+    height: 46px;
+    border: none;
+    color: #333f48;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 23px 16px 7px 16px;
+    outline:none;
+    cursor: pointer;
+}
+
+.khung-nut{
+    background-color: #333f48;
+    line-height: 46px;
+    text-align: center;
+    margin: 0px 20px 20px 20px;
+}
+
+.khung-nut .nut{
+    width: 100%;
+    background-color:#333f48;
+    line-height: 46px;
+    color: #f9f9f9;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.chan-bieu-mau {
+    margin: 0px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #77757f;
+}
+
+.chan-bieu-mau a{
+    font-weight: 600;
+    font-size: 14px;
+    color: #333f48;
+    cursor: pointer;
+}
+
+/* phan man hinh xem chinh */
+
+.phan-loai{
     margin-top: 80px;
     margin-left: 40px;
 }
 
-.kind-tab ul{
+.phan-loai ul{
     display: flex;
     list-style: none;
     
 }
-.kind-tab ul li{
+.phan-loai ul li{
     margin-right: 2px;
     margin-left: 2px;
     color: #c8c7cc;
@@ -422,7 +535,7 @@
     font-size: 12px;
     line-height: 21px;
 }
-.kind-tab ul a{
+.phan-loai ul a{
     text-decoration: none;
     margin-right: 2px;
     margin-left: 2px;
@@ -432,39 +545,38 @@
     line-height: 21px;
 }
 
-.kind-tab a:hover{
+.phan-loai a:hover{
     text-decoration:underline;
     color: #000;
     transition: all 0.5s;
 }
 
-
-
-.block-title{
-    margin: 24px 0px 15px 40px;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-
-}
-
-.category-img{
+.anh-bia-danh-muc{
     margin: 10px 40px 0px 40px;
     
 }
-.category-img img{
+.anh-bia-danh-muc img{
     width: 100%;
     
 }
 
-.category-items-slide{
+.anh-bia-danh-muc{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 10px;
+
+}
+
+#cuon-danh-muc-sp{
     display:block;
     position: relative;
     overflow: hidden;
     margin: 0px 40px;
+    display: flex;
 }
 
-.category-items-slide i {
+#cuon-danh-muc-sp i {
     top: 40%;
     width: 46px;
     height: 46px;
@@ -480,40 +592,34 @@
     
 } 
 
-.category-items-slide i:hover{
+#cuon-danh-muc-sp i:hover{
     background-color: #fff;
 }
 
-.category-items-slide .fa-angle-left{
+#cuon-danh-muc-sp .fa-angle-left{
     left: 65px;
     position:absolute;
     
 }
 
 
-.category-items-slide .fa-angle-right{
+#cuon-danh-muc-sp .fa-angle-right{
     right: 65px;
     position:absolute;
 }
 
 
-
-.slick-list{
-    /* width: 180%; */
-    display:flex;
-}
-
-.category-item-photo{
+.anh-danh-muc-sp{
     width: 100%;
     padding: 20px;
     text-align: center;
 }
-.category-item-photo img{
+.anh-danh-muc-sp img{
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
 }
-.category-item-kind{
+.ten-loai-danh-muc-sp{
     text-align: center;
     text-decoration: none;
     color: #333f48;
@@ -522,77 +628,83 @@
     line-height: 24px;
 }
 
+/* san pham moi*/
 
-.block-product-tab{
-    margin: 0px  40px;
+.khung-muc-san-pham{
+    margin: 0px 40px;
 }
-.title{
+.tieu-de-2{
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 36px;
     margin-top: 40px;
     margin-bottom: 10px;
-
 }
 
-.product-items{
+.danh-sach-san-pham{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  
 }
-.product-card{
-    /* flex-basis: 25%;
-    padding: 4px; */
+
+.the-san-pham{
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-.product-item-info{
+
+.thong-tin-san-pham{
     display: block;
 }
-.product-item-photo{
+.anh-san-pham{
     display: block;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+
 }
-.product-card img{
+.anh-san-pham img{
     max-width: 100%;
     height: auto;
+    display: block;
 }
-.product-item-details{
+
+.thong-tin-chi-tiet-san-pham{
     padding: 10px 0px;
 }
-.product-item-details a{
+.thong-tin-chi-tiet-san-pham a{
     text-decoration: none;
     padding: 2px 0px;
+    color: #333f48;
 }
-.kind-product{
+.loai-san-pham{
     font-size: 11px;
     font-weight: 300;
 }
-.product-item-name{
+.ten-san-pham{
     color: #333f48;
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
 }
-.price{
+.gia{
     color: #333f48;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
 }
 
-/*footer*/
-.container{
+/*phan chan trang*/
+
+.khung-chan-trang{
     background-color: #333f48;
     color: #fff;
     padding: 10px 40px 40px 40px;
 }
-.container ul{
+.khung-chan-trang ul{
     list-style: none;
 }
-.container h4{
+.khung-chan-trang h4{
     font-size: 14px;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -600,23 +712,23 @@
     font-weight: 700;
     line-height: 19px;
 }
-.container li{
+.khung-chan-trang li{
     font-weight: 400;
     line-height: 24px;
     font-size: 14px;
     color: #fff;
 }
-.container a{
+.khung-chan-trang a{
     text-decoration: none;
     font-weight: 400;
     line-height: 24px;
     font-size: 14px;
     color: #fff;
 }
-.social-licks li{
+.duong-dan-tai-khoan-xa-hoi li{
     list-style: none;
 }
-.row{
+.hang-chan-trang{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

@@ -514,133 +514,93 @@
     cursor: pointer;
 }
 
-/* phan man hinh xem chinh */
 
-.phan-loai{
+
+/* phan giao dien chinh */
+
+.khung-san-pham{
     margin-top: 80px;
-    margin-left: 40px;
-}
-
-.phan-loai ul{
-    display: flex;
-    list-style: none;
     
 }
-.phan-loai ul li{
-    margin-right: 2px;
-    margin-left: 2px;
-    color: #c8c7cc;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 21px;
-}
-.phan-loai ul a{
-    text-decoration: none;
-    margin-right: 2px;
-    margin-left: 2px;
-    color: #c8c7cc;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 21px;
-}
 
-.phan-loai a:hover{
-    text-decoration:underline;
-    color: #000;
-    transition: all 0.5s;
+.anh-bia-san-pham-giam-gia{
+    margin: 10px 40px 0px 40px;
+    
 }
-
-
-.anh-bia-trang-san-pham{
-    margin: 5px 40px 10px 40px;
-    display: block;
-}
-
-.anh-bia-trang-san-pham img{
+.anh-bia-san-pham-giam-gia img{
     width: 100%;
+    
 }
-.khung-chia-cot{
+
+.danh-sach-doi-tuong{
+    margin: 80px 40px 10px 40px;
+}
+
+.danh-sach-doi-tuong ul{
     display: flex;
-    margin: 0px 40px;
-}
-
-.cot-danh-muc{
-    margin-top: 24px;
-}
-
-.cot-danh-muc ul li{
     list-style: none;
-    margin-bottom: 10px; 
+    width: 100%;
+    background-color: #333f48;
+}
+.danh-sach-doi-tuong ul li{
+    flex-basis: 25%;
 }
 
-.cot-danh-muc h4{
-    margin-top: 20px;
-    margin-bottom: 10px; 
-}
-
-.cot-danh-muc ul li a{
+.danh-sach-doi-tuong ul li a{
     text-decoration: none;
+    color: #fff;
+    line-height: 48px;
+    font-weight: 600;
     font-size: 14px;
-    font-weight: 400;
-    color: #444f48;
-    line-height: 24px;
     display: block;
-
+    text-transform: uppercase;
+    padding: 0 10px;
+    text-align: center;
 }
 
-.cot-danh-muc h4 a{
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-     color: #444f48;
-    line-height: 24px;
-    display: block;
-}
-
-.cot-danh-muc h4 a:hover{
-    text-decoration:underline;
-    color: #da291c;
-    transition: all 0.5s;
-}
-
-.cot-danh-muc ul li a:hover{
-    text-decoration:underline;
-    color: #da291c;
-    transition: all 0.5s;
-}
-
-.cot-danh-muc a.cot-danh-muc{
-    color: #da291c;
-}
-
-.khung-trang-ben-phai{
-    float: right;
-    color: #424242;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 10px;
-}
-
-.nhan-sap-xep{
+.danh-sach-doi-tuong li a.hien-tai{
     background-color: #f6f6f6;
-    height: 40px;
-    padding-right: 16px;
-    padding-left: 16px;
-    color: #da291c;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.nhan-sap-xep i{
-    padding-left: 5px;
-}
-.nhan-sap-xep:hover{
-    background-color: #d4d6d8;
+    color: #333f48;
+
 }
 
-.cot-san-pham{
-    clear: both;
+
+.danh-sach-gia{
+    margin: 40px 49px 20px 49px;
+}
+
+.danh-sach-gia ul{
+    display: flex;
+    list-style: none;
+    background-color: #f6f6f6;
+    margin: 40px 49px 10px 49px;
+}
+.danh-sach-gia ul li{
+    flex-basis: 30%
+}
+
+.danh-sach-gia ul li a{
+    text-decoration: none;
+    color: #333f48;
+    line-height: 48px;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    text-transform: uppercase;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.danh-sach-gia li a.hien-tai{
+    background: #da291c;
+    color: #fff;
+
+}
+
+/* danh-sach-san-pham */
+
+.khung-muc-san-pham{
+    margin: 0px 40px;
 }
 
 .danh-sach-san-pham{
@@ -648,13 +608,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  
 }
+
 .the-san-pham{
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
 
 .thong-tin-san-pham{
     display: block;
@@ -697,7 +656,6 @@
     line-height: 1.5;
 }
 
-
 /*phan chan trang*/
 
 .khung-chan-trang{
@@ -737,5 +695,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+
 
 
